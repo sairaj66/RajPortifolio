@@ -1,6 +1,12 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
+const profileImage = document.querySelector('.profile-orbit img');
+if (profileImage) {
+  profileImage.src = 'assets/profile-photo.svg';
+  profileImage.alt = 'Sai Raj Vasa profile photo';
+}
+
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
